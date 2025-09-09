@@ -19,7 +19,7 @@ export default function Chase() {
           }}
         >
           <div
-            className="w-1/4 h-1/4 bg-gray-800 rounded-full block"
+            className="w-1/4 h-1/4 bg-white rounded-full block"
             style={{
               animation: 'sk-chase-dot-before 2.0s infinite ease-in-out both',
               animationDelay: `${-1.1 + index * 0.1}s`

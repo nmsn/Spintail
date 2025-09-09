@@ -4,11 +4,11 @@ export default function BounceDelay() {
   const delays = [-0.32, -0.16, 0];
 
   return (
-    <div className="mx-auto mt-25 w-18 text-center">
+    <div className="mx-auto w-18 text-center">
       {delays.map((delay, index) => (
         <div
           key={index}
-          className="w-4.5 h-4.5 bg-gray-800 rounded-full inline-block"
+          className="w-4.5 h-4.5 bg-white rounded-full inline-block"
           style={{
             animation: 'sk-bouncedelay 1.4s infinite ease-in-out both',
             animationDelay: `${delay}s`

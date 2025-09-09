@@ -3,7 +3,7 @@ import React from 'react';
 export default function RotatePlane() {
   return (
     <div
-      className="w-10 h-10 mx-auto my-25 bg-gray-800"
+      className="w-10 h-10 mx-auto my-25 bg-white"
       style={{
         animation: 'spin3d 1.2s infinite ease-in-out',
         animationName: 'spin3d'

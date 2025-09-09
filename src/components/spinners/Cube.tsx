@@ -5,7 +5,7 @@ export default function Cube() {
     <div className="w-10 h-10 mx-auto my-25 relative">
       {/* 第一个立方体 */}
       <div
-        className="bg-gray-800 w-4 h-4 absolute top-0 left-0"
+        className="bg-white w-4 h-4 absolute top-0 left-0"
         style={{
           animation: 'sk-cubemove 1.8s infinite ease-in-out'
         }}
@@ -13,7 +13,7 @@ export default function Cube() {
 
       {/* 第二个立方体 */}
       <div
-        className="bg-gray-800 w-4 h-4 absolute top-0 left-0"
+        className="bg-white w-4 h-4 absolute top-0 left-0"
         style={{
           animation: 'sk-cubemove 1.8s infinite ease-in-out',
           animationDelay: '-0.9s'

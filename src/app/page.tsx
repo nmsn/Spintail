@@ -16,10 +16,10 @@ import Scaleout from '@/components/spinners/Scaleout'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="min-h-screen bg-gray-900">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
-        Spintail
+        <h1 className="text-white text-2xl font-bold">Spintail</h1>
       </header>
 
       {/* Hero Section */}
@@ -29,46 +29,46 @@ export default function Home() {
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
               Beautiful
             </span>
-            <br />
-            <span className="text-gray-900">React Spinners</span>
+            &nbsp;
+            <span className="text-white">React Spinners</span>
           </h1>
 
         </div>
-        <div className="flex flex-wrap gap-6 justify-center">
-          <Card>
+        <div className="flex flex-wrap justify-center">
+          <Card index={0}>
             <RotatePlane />
           </Card>
-          <Card>
+          <Card index={1}>
             <Chase />
           </Card>
-          <Card>
+          <Card index={2}>
             <DoubleBounce />
           </Card>
-          <Card>
+          <Card index={3}>
             <Rect />
           </Card>
-          <Card>
+          <Card index={4}>
             <Bounce />
           </Card>
-          <Card>
+          <Card index={5}>
             <BounceDelay />
           </Card>
-          <Card>
+          <Card index={6}>
             <Circle />
           </Card>
-          <Card>
+          <Card index={7}>
             <CircleFade />
           </Card>
-          <Card>
+          <Card index={8}>
             <Cube />
           </Card>
-          <Card>
+          <Card index={9}>
             <CubeGrid />
           </Card>
-          <Card>
+          <Card index={10}>
             <FoldCube />
           </Card>
-          <Card>
+          <Card index={11}>
             <Scaleout />
           </Card>
         </div>
@@ -78,8 +78,8 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 py-8">
-        <div className="container mx-auto px-4 text-center text-gray-600">
+      <footer className="border-t border-gray-700 py-8">
+        <div className="container mx-auto px-4 text-center text-gray-400">
           <p>Built with ❤️ using Next.js and Tailwind CSS</p>
         </div>
       </footer>

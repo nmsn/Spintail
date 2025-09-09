@@ -6,6 +6,7 @@ interface CardProps {
   title?: string;
   content?: string;
   imageUrl?: string;
+  index?: number;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -13,15 +14,17 @@ const Card: React.FC<CardProps> = ({
   className = '',
   title,
   content,
-  imageUrl
+  imageUrl,
+  index = 0
 }) => {
+  // 单数索引使用浅灰色，双数索引使用深灰色
+  const bgColor = index % 2 === 0 ? 'bg-gray-700' : 'bg-gray-800';
+
   return (
     <div className={`
       w-1/3 min-w-[200px] h-[360px]
-      bg-white shadow-md
+      ${bgColor}
       overflow-hidden flex flex-col
-      transition-all duration-200 ease-in-out
-      hover:shadow-lg hover:-translate-y-0.5
       ${className}
     `}>
       {imageUrl && (

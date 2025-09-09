@@ -3,7 +3,7 @@ import React from 'react';
 export default function Scaleout() {
   return (
     <div
-      className="w-10 h-10 mx-auto my-25 bg-gray-800 rounded-full"
+      className="w-10 h-10 mx-auto my-25 bg-white rounded-full"
       style={{
         animation: 'sk-scaleout 1.0s infinite ease-in-out'
       }}

@@ -10,7 +10,7 @@ export default function Bounce() {
     >
       {/* 第一个点 */}
       <div
-        className="w-3/5 h-3/5 inline-block absolute top-0 bg-gray-800 rounded-full"
+        className="w-3/5 h-3/5 inline-block absolute top-0 bg-white rounded-full"
         style={{
           animation: 'sk-bounce 2.0s infinite ease-in-out'
         }}
@@ -18,7 +18,7 @@ export default function Bounce() {
 
       {/* 第二个点 */}
       <div
-        className="w-3/5 h-3/5 inline-block absolute bottom-0 bg-gray-800 rounded-full"
+        className="w-3/5 h-3/5 inline-block absolute bottom-0 bg-white rounded-full"
         style={{
           animation: 'sk-bounce 2.0s infinite ease-in-out',
           animationDelay: '-1.0s'

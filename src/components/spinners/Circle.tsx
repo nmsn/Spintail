@@ -13,7 +13,7 @@ export default function Circle() {
           }}
         >
           <div
-            className="w-[15%] h-[15%] bg-gray-800 rounded-full block mx-auto"
+            className="w-[15%] h-[15%] bg-white rounded-full block mx-auto"
             style={{
               animation: 'sk-circleBounceDelay 1.2s infinite ease-in-out both',
               animationDelay: `${-1.2 + index * 0.1}s`

@@ -8,7 +8,7 @@ export default function CubeGrid() {
       {delays.map((delay, index) => (
         <div
           key={index}
-          className="w-full h-full bg-gray-800"
+          className="w-full h-full bg-white"
           style={{
             animation: 'sk-cubeGridScaleDelay 1.3s infinite ease-in-out',
             animationDelay: `${delay}s`

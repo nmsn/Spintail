@@ -24,7 +24,7 @@ export default function FoldCube() {
           }}
         >
           <div
-            className="absolute top-0 left-0 w-full h-full bg-gray-800"
+            className="absolute top-0 left-0 w-full h-full bg-white"
             style={{
               animation: 'sk-foldCubeAngle 2.4s infinite linear both',
               animationDelay: `${cube.delay}s`,

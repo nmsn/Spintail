@@ -7,7 +7,7 @@ export default function Rect() {
       {Array.from({ length: 5 }, (_, index) => (
         <div
           key={index}
-          className="bg-gray-800 h-full w-1.5 inline-block"
+          className="bg-white h-full w-1.5 inline-block mr-[3px]"
           style={{
             animation: 'sk-stretchdelay 1.2s infinite ease-in-out',
             animationDelay: `${-1.2 + index * 0.1}s`
