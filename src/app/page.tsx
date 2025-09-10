@@ -1,4 +1,8 @@
+'use client';
+
+import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { ArrowRight, Github, Copy, Zap } from 'lucide-react'
 import Card from '@/components/Card'
 import RotatePlane from '@/components/spinners/RotatePlane'
@@ -13,8 +17,12 @@ import Cube from '@/components/spinners/Cube'
 import CubeGrid from '@/components/spinners/CubeGrid'
 import FoldCube from '@/components/spinners/FoldCube'
 import Scaleout from '@/components/spinners/Scaleout'
-
 export default function Home() {
+  const router = useRouter();
+
+  const handleCardClick = (name: string) => {
+    router.push(`/component/${name}`);
+  };
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Header */}
@@ -35,40 +43,76 @@ export default function Home() {
 
         </div>
         <div className="flex flex-wrap justify-center">
-          <Card index={0}>
+          <Card
+            index={0}
+            onClick={() => handleCardClick('RotatePlane')}
+          >
             <RotatePlane />
           </Card>
-          <Card index={1}>
+          <Card
+            index={1}
+            onClick={() => handleCardClick('Chase')}
+          >
             <Chase />
           </Card>
-          <Card index={2}>
+          <Card
+            index={2}
+            onClick={() => handleCardClick('DoubleBounce')}
+          >
             <DoubleBounce />
           </Card>
-          <Card index={3}>
+          <Card
+            index={3}
+            onClick={() => handleCardClick('Rect')}
+          >
             <Rect />
           </Card>
-          <Card index={4}>
+          <Card
+            index={4}
+            onClick={() => handleCardClick('Bounce')}
+          >
             <Bounce />
           </Card>
-          <Card index={5}>
+          <Card
+            index={5}
+            onClick={() => handleCardClick('BounceDelay')}
+          >
             <BounceDelay />
           </Card>
-          <Card index={6}>
+          <Card
+            index={6}
+            onClick={() => handleCardClick('Circle')}
+          >
             <Circle />
           </Card>
-          <Card index={7}>
+          <Card
+            index={7}
+            onClick={() => handleCardClick('CircleFade')}
+          >
             <CircleFade />
           </Card>
-          <Card index={8}>
+          <Card
+            index={8}
+            onClick={() => handleCardClick('Cube')}
+          >
             <Cube />
           </Card>
-          <Card index={9}>
+          <Card
+            index={9}
+            onClick={() => handleCardClick('CubeGrid')}
+          >
             <CubeGrid />
           </Card>
-          <Card index={10}>
+          <Card
+            index={10}
+            onClick={() => handleCardClick('FoldCube')}
+          >
             <FoldCube />
           </Card>
-          <Card index={11}>
+          <Card
+            index={11}
+            onClick={() => handleCardClick('Scaleout')}
+          >
             <Scaleout />
           </Card>
         </div>
